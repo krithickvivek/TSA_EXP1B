@@ -70,10 +70,13 @@ plt.grid(alpha=0.9)
 ```
 
 ## OUTPUT
+
 ### REGULAR DIFFERENCING
 <img width="694" height="496" alt="image" src="https://github.com/user-attachments/assets/d35c0aed-fe00-40be-9878-c28157922896" />
+
 ### SEASONAL ADJUSTMENT
 <img width="699" height="493" alt="image" src="https://github.com/user-attachments/assets/70656fb2-bebf-4887-8d25-84986af4d11a" />
+
 ### LOG TRANSFORMATION
 <img width="699" height="508" alt="image" src="https://github.com/user-attachments/assets/d7046250-6287-4919-9a07-e5df147ecb9b" />
 
