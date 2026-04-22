@@ -48,20 +48,7 @@ data['seasonal_diff'] = data['Revenue (millions)'] - data['Revenue (millions)'].
 # -------- LOG TRANSFORM --------
 data['log'] = np.log(data['Revenue (millions)'])
 
-# -------- LOG DIFFERENCING --------
-data['log_diff'] = data['log'] - data['log'].shift(1)
-
-# -------- LOG SEASONAL DIFFERENCING --------
-data['log_seasonal_diff'] = data['log'] - data['log'].shift(4)
-
-# -------- PLOTTING --------
 plt.figure(figsize=(18, 18))
-
-plt.plot(data['Revenue (millions)'])
-plt.title('Original')
-plt.xlabel('Year')
-plt.ylabel('Revenue')
-plt.grid(alpha=0.9)
 
 plt.plot(data['diff'])
 plt.title('Differencing')
@@ -80,18 +67,6 @@ plt.title('Log Transform')
 plt.xlabel('Year')
 plt.ylabel('Log Revenue')
 plt.grid(alpha=0.9)
-
-plt.plot(data['log_diff'])
-plt.title('Log Differencing')
-plt.xlabel('Year')
-plt.ylabel('Log Differenced Revenue')
-plt.grid(alpha=0.9)
-
-plt.plot(data['log_seasonal_diff'])
-plt.title('Log Seasonal Differencing')
-plt.xlabel('Year')
-plt.ylabel('Log Seasonal Differenced Revenue')
-plt.grid(alpha=0.9)
 ```
 
 ## OUTPUT
@@ -101,5 +76,6 @@ plt.grid(alpha=0.9)
 <img width="699" height="493" alt="image" src="https://github.com/user-attachments/assets/70656fb2-bebf-4887-8d25-84986af4d11a" />
 ### LOG TRANSFORMATION
 <img width="699" height="508" alt="image" src="https://github.com/user-attachments/assets/d7046250-6287-4919-9a07-e5df147ecb9b" />
+
 ## RESULT:
 Thus, we have successfully created the Python code for the conversion of non-stationary Apple revenue data into stationary form using differencing, seasonal adjustment, and log transformation.
